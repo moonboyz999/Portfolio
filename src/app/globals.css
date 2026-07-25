@@ -631,10 +631,78 @@ body {
   color: var(--muted);
 }
 
+.demo-logins-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
 .demo-logins-role {
   display: block;
   font-weight: 600;
   color: var(--foreground);
+}
+
+.demo-logins-creds-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.demo-logins-email {
+  display: block;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.demo-logins-password-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 11px;
+}
+
+.demo-logins-password {
+  flex: 1;
+  color: var(--muted);
+  word-break: break-all;
+}
+
+.demo-logins-password-toggle {
+  flex-shrink: 0;
+  padding: 0.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid color-mix(in oklab, var(--accent) 30%, transparent);
+  border-radius: 0.4rem;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.demo-logins-password-toggle:hover {
+  background: color-mix(in oklab, var(--accent) 15%, transparent);
+  border-color: color-mix(in oklab, var(--accent) 50%, transparent);
+  color: var(--accent);
+}
+
+.demo-logins-password-toggle:active {
+  background: color-mix(in oklab, var(--accent) 25%, transparent);
+}
+
+.demo-logins-password-toggle svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  stroke-width: 2.2;
 }
 
 .demo-logins-creds {

@@ -16,8 +16,8 @@ type DemoLoginsDropdownProps = {
   leading?: ReactNode;
 };
 
-const OPEN_EASE = "cubic-bezier(0.16, 1, 0.3, 1)";
-const CLOSE_EASE = "cubic-bezier(0.4, 0, 0.2, 1)";
+const OPEN_EASE = "ease-out";
+const CLOSE_EASE = "ease-out";
 
 /**
  * Collapsible demo credentials.
@@ -30,6 +30,7 @@ export function DemoLoginsDropdown({
 }: DemoLoginsDropdownProps) {
   const t = useTranslations("projects");
   const [open, setOpen] = useState(false);
+  const [visiblePasswords, setVisiblePasswords] = useState<Set<string>>(new Set());
   const panelId = useId();
   const panelRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
@@ -38,6 +39,18 @@ export function DemoLoginsDropdown({
   const prefersReducedMotion = useCallback(() => {
     if (typeof window === "undefined") return false;
     return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }, []);
+
+  const togglePasswordVisibility = useCallback((email: string) => {
+    setVisiblePasswords((prev) => {
+      const next = new Set(prev);
+      if (next.has(email)) {
+        next.delete(email);
+      } else {
+        next.add(email);
+      }
+      return next;
+    });
   }, []);
 
   const handleToggle = useCallback(() => {
@@ -65,8 +78,8 @@ export function DemoLoginsDropdown({
 
       const target = inner.scrollHeight;
       panel.style.transition = [
-        `height 0.55s ${OPEN_EASE}`,
-        `opacity 0.4s ease`,
+        `height 0.3s ${OPEN_EASE}`,
+        `opacity 0.3s ease`,
       ].join(", ");
       panel.style.height = `${target}px`;
       panel.style.opacity = "1";
@@ -92,8 +105,8 @@ export function DemoLoginsDropdown({
     void panel.offsetHeight;
 
     panel.style.transition = [
-      `height 0.42s ${CLOSE_EASE}`,
-      `opacity 0.28s ease`,
+      `height 0.3s ${CLOSE_EASE}`,
+      `opacity 0.3s ease`,
     ].join(", ");
     panel.style.height = "0px";
     panel.style.opacity = "0";
@@ -147,17 +160,66 @@ export function DemoLoginsDropdown({
       >
         <div ref={innerRef} className="demo-logins-panel__inner">
           <ul className="demo-logins-list">
-            {logins.map((login) => (
-              <li
-                key={`${login.role}-${login.email}`}
-                className="demo-logins-item"
-              >
-                <span className="demo-logins-role">{login.role}</span>
-                <span className="demo-logins-creds">
-                  {login.email} · {login.password}
-                </span>
-              </li>
-            ))}
+            {logins.map((login) => {
+              const isPasswordVisible = visiblePasswords.has(login.email);
+              const displayPassword = isPasswordVisible
+                ? login.password
+                : "●".repeat(login.password.length);
+
+              return (
+                <li
+                  key={`${login.role}-${login.email}`}
+                  className="demo-logins-item"
+                >
+                  <div className="demo-logins-item-content">
+                    <div className="demo-logins-role">{login.role}</div>
+                    <div className="demo-logins-creds-group">
+                      <span className="demo-logins-email">{login.email}</span>
+                      <div className="demo-logins-password-row">
+                        <span className="demo-logins-password">
+                          {displayPassword}
+                        </span>
+                        <button
+                          type="button"
+                          className="demo-logins-password-toggle"
+                          onClick={() => togglePasswordVisibility(login.email)}
+                          aria-label={
+                            isPasswordVisible
+                              ? `Hide password for ${login.email}`
+                              : `Show password for ${login.email}`
+                          }
+                          title={
+                            isPasswordVisible ? "Hide password" : "Show password"
+                          }
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            aria-hidden
+                          >
+                            {isPasswordVisible ? (
+                              <>
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                              </>
+                            ) : (
+                              <>
+                                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24" />
+                                <path d="M1 1l22 22" />
+                              </>
+                            )}
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
