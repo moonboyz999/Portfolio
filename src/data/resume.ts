@@ -15,8 +15,8 @@ export const resume: Resume = {
     "Full-stack developer building scalable web and IoT solutions with Angular, React, Node.js, and Spring Boot.",
   about:
     "Driven developer with hands-on experience using Angular, React, Node.js, and Spring Boot. Open-minded and highly adaptable, with a strong focus on continuous learning, improving engineering practices, and working collaboratively to deliver scalable, high-performance software solutions. Comfortable contributing across the stack and learning new frameworks and tools to solve complex problems.",
-  resumePdfPath: "/Khairul-Izwan-Haziz-Resume.pdf",
-  headshotPath: "/khairul-headshot.jpg",
+  resumePdfPath: "/docs/Khairul-Izwan-Haziz-Resume.pdf",
+  headshotPath: "/images/khairul-headshot.jpg",
   navLinks: [
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skills" },
