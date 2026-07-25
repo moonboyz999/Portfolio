@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Exo_2, Geist_Mono, Orbitron } from "next/font/google";
+import { LanguageProvider } from "@/i18n/LanguageProvider";
 import "./globals.css";
 
 /** Techy display font for the cyberpunk brand / headings. */
@@ -56,7 +57,7 @@ export default function RootLayout({
       className={`${orbitron.variable} ${exo2.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="relative flex min-h-full flex-col bg-background font-sans text-foreground">
-        {children}
+        <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
   );

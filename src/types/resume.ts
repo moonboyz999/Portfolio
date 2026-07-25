@@ -28,6 +28,10 @@ export type SpokenLanguage = {
 export type Certification = {
   name: string;
   year: string;
+  /** Credly share badge ID — used by the official embed widget. */
+  credlyBadgeId?: string;
+  /** Public Credly page so visitors can verify the badge. */
+  credlyUrl?: string;
 };
 
 /** Work / internship experience. */
@@ -48,6 +52,13 @@ export type EducationItem = {
   bullets: string[];
 };
 
+/** Demo login shown on a project card for try-it-yourself UAT links. */
+export type DemoLogin = {
+  role: string;
+  email: string;
+  password: string;
+};
+
 /** A portfolio project card. */
 export type Project = {
   title: string;
@@ -58,6 +69,8 @@ export type Project = {
   award?: string;
   liveUrl?: string;
   repoUrl?: string;
+  /** Optional demo accounts visitors can use on the live site. */
+  demoLogins?: DemoLogin[];
 };
 
 /** The full resume shape — everything the site renders. */

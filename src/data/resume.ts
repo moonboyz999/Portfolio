@@ -43,7 +43,15 @@ export const resume: Resume = {
     { name: "Malay", level: "Native" },
     { name: "Mandarin", level: "Professional" },
   ],
-  certifications: [{ name: "CompTIA Data+", year: "2026" }],
+  certifications: [
+    {
+      name: "CompTIA Data+",
+      year: "2026",
+      credlyBadgeId: "a22749bf-0e97-4a05-911a-1716ade73056",
+      credlyUrl:
+        "https://www.credly.com/badges/a22749bf-0e97-4a05-911a-1716ade73056",
+    },
+  ],
   experience: [
     {
       company: "Digital Webplus",
@@ -159,15 +167,29 @@ export const resume: Resume = {
       tech: ["Angular", "React", "Figma", "RESTful API"],
     },
     {
-      title: "Snooker & Pool Management Application",
+      title: "Palm Pool — Snooker & Pool Management",
       description:
-        "Freelance project — custom management suite and Point of Sale (POS) system for a local snooker/pool venue.",
+        "Freelance project — custom management suite and Point of Sale (POS) system for a local snooker/pool venue (Palm Pool).",
       highlights: [
         "Built as a freelance engagement for a local venue.",
         "Real-time table timer tracking, dynamic pricing, order management, and financial reporting dashboards.",
+        "Live UAT demo available — use the accounts below to try admin and staff roles.",
       ],
       tech: ["Freelance", "POS", "Real-time", "Dashboards"],
       award: "Freelance",
+      liveUrl: "https://palmpool-uat.netlify.app/",
+      demoLogins: [
+        {
+          role: "Admin",
+          email: "admin@test.com",
+          password: "test123",
+        },
+        {
+          role: "Staff",
+          email: "user2@test.com",
+          password: "test123",
+        },
+      ],
     },
   ],
 };

@@ -1,25 +1,49 @@
-import { resume } from "@/data/resume";
+"use client";
+
+import { useMessages, useTranslations } from "next-intl";
 import { Section } from "@/components/ui/Section";
 import { Card } from "@/components/ui/Card";
 import { Reveal } from "@/components/ui/Reveal";
+
+type ExperienceItem = {
+  company: string;
+  title: string;
+  period: string;
+  bullets: string[];
+};
+
+type EducationItem = {
+  degree: string;
+  school: string;
+  year: string;
+  gpa?: string;
+  bullets: string[];
+};
 
 /**
  * Work / internship experience plus education.
  */
 export function Experience() {
+  const t = useTranslations("experience");
+  const messages = useMessages();
+  const experience = (messages.content as { experience: ExperienceItem[] })
+    .experience;
+  const education = (messages.content as { education: EducationItem[] })
+    .education;
+
   return (
     <Section
       id="experience"
-      title="Experience"
-      subtitle="Internship work and formal education."
+      title={t("title")}
+      subtitle={t("subtitle")}
     >
       <div className="space-y-8">
         <div>
           <h3 className="mb-4 text-sm font-medium uppercase tracking-[0.15em] text-muted">
-            Work
+            {t("work")}
           </h3>
           <div className="space-y-4">
-            {resume.experience.map((job, index) => (
+            {experience.map((job, index) => (
               <Reveal key={job.company} delayMs={index * 60}>
                 <Card>
                   <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
@@ -44,10 +68,10 @@ export function Experience() {
 
         <div>
           <h3 className="mb-4 text-sm font-medium uppercase tracking-[0.15em] text-muted">
-            Education
+            {t("education")}
           </h3>
           <div className="space-y-4">
-            {resume.education.map((edu, index) => (
+            {education.map((edu, index) => (
               <Reveal key={`${edu.degree}-${edu.school}`} delayMs={index * 60}>
                 <Card>
                   <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
@@ -61,7 +85,7 @@ export function Experience() {
                     </div>
                     <p className="shrink-0 text-sm text-muted sm:text-right">
                       {edu.year}
-                      {edu.gpa ? ` · GPA ${edu.gpa}` : ""}
+                      {edu.gpa ? ` · ${t("gpa")} ${edu.gpa}` : ""}
                     </p>
                   </div>
                   {edu.bullets.length > 0 ? (

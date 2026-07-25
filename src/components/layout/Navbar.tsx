@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useTranslations } from "next-intl";
 import { resume } from "@/data/resume";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { smoothScrollTo } from "@/lib/smoothScroll";
@@ -13,10 +14,22 @@ import { CloseIcon, MenuIcon } from "@/components/ui/icons";
  */
 export function Navbar() {
   const [open, setOpen] = useState(false);
+  const t = useTranslations("nav");
+
+  const navLinks = useMemo(
+    () => [
+      { label: t("about"), href: "#about" },
+      { label: t("skills"), href: "#skills" },
+      { label: t("experience"), href: "#experience" },
+      { label: t("projects"), href: "#projects" },
+      { label: t("contact"), href: "#contact" },
+    ],
+    [t],
+  );
 
   const sectionIds = useMemo(
-    () => resume.navLinks.map((link) => link.href.replace("#", "")),
-    [],
+    () => navLinks.map((link) => link.href.replace("#", "")),
+    [navLinks],
   );
   const activeId = useActiveSection(sectionIds);
 
@@ -40,7 +53,7 @@ export function Navbar() {
         </button>
 
         <ul className="hidden items-center gap-1 md:flex">
-          {resume.navLinks.map((link) => {
+          {navLinks.map((link) => {
             const id = link.href.replace("#", "");
             const isActive = activeId === id;
             return (
@@ -67,7 +80,7 @@ export function Navbar() {
           className="rounded-lg p-2 text-foreground md:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
-          aria-label={open ? "Close menu" : "Open menu"}
+          aria-label={open ? t("closeMenu") : t("openMenu")}
           onClick={() => setOpen((value) => !value)}
         >
           {open ? <CloseIcon /> : <MenuIcon />}
@@ -79,7 +92,7 @@ export function Navbar() {
           id="mobile-nav"
           className="space-y-1 border-t border-card-border px-6 py-4 md:hidden"
         >
-          {resume.navLinks.map((link) => {
+          {navLinks.map((link) => {
             const id = link.href.replace("#", "");
             const isActive = activeId === id;
             return (

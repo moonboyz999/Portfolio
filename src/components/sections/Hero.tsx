@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { resume } from "@/data/resume";
 import { Reveal } from "@/components/ui/Reveal";
 import { SmoothScrollButton } from "@/components/ui/SmoothScrollButton";
@@ -15,6 +18,8 @@ import {
  * Uses the headshot from public/ and links to projects + resume PDF.
  */
 export function Hero() {
+  const t = useTranslations("hero");
+
   return (
     <section
       id="home"
@@ -24,7 +29,7 @@ export function Hero() {
       <div className="mx-auto grid w-full max-w-5xl items-center gap-12 lg:grid-cols-[1.2fr_0.8fr]">
         <Reveal>
           <p className="mb-3 font-mono text-sm font-medium uppercase tracking-[0.25em] text-accent">
-            // Portfolio &amp; Resume
+            {t("eyebrow")}
           </p>
           <h1
             id="hero-heading"
@@ -32,9 +37,9 @@ export function Hero() {
           >
             {resume.name}
           </h1>
-          <p className="mt-3 text-xl text-accent sm:text-2xl">{resume.role}</p>
+          <p className="mt-3 text-xl text-accent sm:text-2xl">{t("role")}</p>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-            {resume.tagline}
+            {t("tagline")}
           </p>
 
           <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-muted">
@@ -63,7 +68,7 @@ export function Hero() {
               targetId="projects"
               className="inline-flex items-center justify-center rounded-full bg-accent-strong px-5 py-2.5 text-sm font-semibold text-white shadow-[0_0_20px_rgba(0,150,255,0.45)] transition-all hover:bg-accent hover:shadow-[0_0_28px_rgba(0,229,255,0.55)]"
             >
-              View Projects
+              {t("viewProjects")}
             </SmoothScrollButton>
             <a
               href={resume.resumePdfPath}
@@ -71,7 +76,7 @@ export function Hero() {
               className="inline-flex items-center justify-center gap-2 rounded-full border border-accent/40 bg-surface px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
             >
               <DownloadIcon className="h-4 w-4" />
-              Download Resume
+              {t("downloadResume")}
             </a>
             <a
               href={resume.linkedin}
@@ -81,7 +86,7 @@ export function Hero() {
               aria-label="LinkedIn profile"
             >
               <LinkedInIcon className="h-4 w-4" />
-              LinkedIn
+              {t("linkedIn")}
             </a>
           </div>
         </Reveal>

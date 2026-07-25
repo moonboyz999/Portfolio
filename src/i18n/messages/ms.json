@@ -1,0 +1,188 @@
+{
+  "htmlLang": "ms",
+  "nav": {
+    "about": "Tentang",
+    "skills": "Kemahiran",
+    "experience": "Pengalaman",
+    "projects": "Projek",
+    "contact": "Hubungi",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu"
+  },
+  "hero": {
+    "eyebrow": "// Portfolio & Resume",
+    "role": "Jurutera Perisian",
+    "tagline": "Pembangun full-stack yang membina penyelesaian web dan IoT yang boleh skala dengan Angular, React, Node.js, dan Spring Boot.",
+    "viewProjects": "Lihat Projek",
+    "downloadResume": "Muat Turun Resume",
+    "linkedIn": "LinkedIn"
+  },
+  "about": {
+    "title": "Tentang",
+    "subtitle": "Siapa saya dan apa yang saya utamakan sebagai jurutera.",
+    "body": "Pembangun berdedikasi dengan pengalaman praktikal menggunakan Angular, React, Node.js, dan Spring Boot. Berfikiran terbuka dan sangat mudah menyesuaikan diri, dengan fokus kuat pada pembelajaran berterusan, menambah baik amalan kejuruteraan, dan bekerjasama untuk menyampaikan penyelesaian perisian yang boleh skala dan berprestasi tinggi. Selesa menyumbang merentas stack serta mempelajari rangka kerja dan alat baharu untuk menyelesaikan masalah kompleks."
+  },
+  "skills": {
+    "title": "Kemahiran",
+    "subtitle": "Alat dan bahasa yang saya gunakan untuk membina perisian.",
+    "technical": "Kemahiran Teknikal",
+    "languages": "Bahasa",
+    "certifications": "Pensijilan",
+    "languageHint": "Klik bahasa untuk tukar laman web",
+    "skillGroups": {
+      "languages": "Bahasa Pengaturcaraan",
+      "frameworks": "Rangka Kerja & Perpustakaan",
+      "other": "Lain-lain"
+    }
+  },
+  "experience": {
+    "title": "Pengalaman",
+    "subtitle": "Kerja latihan industri dan pendidikan formal.",
+    "work": "Kerja",
+    "education": "Pendidikan",
+    "gpa": "PNGK"
+  },
+  "projects": {
+    "title": "Projek",
+    "subtitle": "Kerja terpilih merentas IoT, platform web, dan sistem POS.",
+    "liveDemo": "Demo langsung",
+    "code": "Kod",
+    "demoLogins": "Log masuk demo"
+  },
+  "contact": {
+    "title": "Hubungi",
+    "subtitle": "Terbuka kepada peluang — sila hubungi saya.",
+    "email": "E-mel",
+    "phone": "Telefon",
+    "linkedIn": "LinkedIn",
+    "location": "Lokasi"
+  },
+  "footer": {
+    "rights": "Hak cipta terpelihara.",
+    "builtWith": "Dibina dengan Next.js & Tailwind CSS"
+  },
+  "cert": {
+    "hoverHint": "Hover untuk pratonton · Klik untuk sahkan",
+    "clickHint": "Klik untuk sahkan di Credly",
+    "verifyLabel": "Sahkan {name} di Credly"
+  },
+  "content": {
+    "experience": [
+      {
+        "company": "Digital Webplus",
+        "title": "Pelatih Jurutera Perisian",
+        "period": "Mac 2026 – Ogos 2026",
+        "bullets": [
+          "Membina halaman UI responsif berketepatan tinggi berdasarkan reka bentuk Figma untuk platform pengurusan domain perusahaan.",
+          "Menangani pembetulan pepijat kritikal dan menghantar kemas kini ciri supaya operasi platform berjalan lancar.",
+          "Menyumbang merentas Domain Platform & Services, bekerjasama dengan pasukan pada antara muka web sedia produksi."
+        ]
+      },
+      {
+        "company": "Zus Coffee",
+        "title": "Barista (Separuh Masa)",
+        "period": "Oktober 2023 – Ogos 2026",
+        "bullets": [
+          "Memberikan perkhidmatan pelanggan yang cemerlang — menyambut pelanggan, mengambil pesanan, dan menangani pertanyaan atau isu.",
+          "Kekal fleksibel dalam persekitaran pantas dan cepat mempelajari kemahiran serta prosedur baharu."
+        ]
+      },
+      {
+        "company": "Golden Screen Cinema",
+        "title": "Steward (Separuh Masa)",
+        "period": "April 2023 – September 2023",
+        "bullets": [
+          "Menyambut dan membantu pelanggan dengan sikap mesra, menjawab pertanyaan serta berkongsi jadual filem dan maklumat kemudahan.",
+          "Memproses jualan tiket dengan tepat, mengesahkan tiket, dan memastikan kemasukan ke auditorium berjalan lancar."
+        ]
+      },
+      {
+        "company": "PC Image · Kota Kinabalu, Sabah",
+        "title": "Pembantu Jualan",
+        "period": "Jun 2021 – Dis 2021",
+        "bullets": [
+          "Memberikan perkhidmatan pelanggan yang baik dengan menyambut klien dan membina hubungan dengan pelanggan utama.",
+          "Mengekalkan pengetahuan produk untuk memberi cadangan bermaklumat dan menjawab soalan klien.",
+          "Berhubung dengan klien melalui telefon dan e-mel tentang promosi serta acara.",
+          "Membantu pemulangan item, bayaran balik, dan meningkatkan isu lebih besar kepada pengurus.",
+          "Menjaga lorong kedai bersih dan tersusun untuk pengalaman pelanggan yang lebih baik."
+        ]
+      },
+      {
+        "company": "Inti Deras · Kota Kinabalu, Sabah",
+        "title": "Junior IT Web Developer (Pelatih)",
+        "period": "Jun 2019 – Dis 2019",
+        "bullets": [
+          "Menyelesaikan latihan diploma berfokus pada IT junior dan pembangunan web.",
+          "Membantu membina dan mengemas kini halaman web serta kandungan digital syarikat.",
+          "Menyokong tugas IT harian dan mempelajari aliran kerja pembangunan web profesional dalam pasukan."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Kejuruteraan Perisian",
+        "school": "University Malaysia of Computer Science & Engineering (UNIMY)",
+        "year": "2023 – Kini (tamat 2026)",
+        "gpa": "3.4",
+        "bullets": [
+          "Mengaplikasikan prinsip kejuruteraan perisian melalui kerja kursus dan tugasan, menekankan reka bentuk sistem, ujian, dan kod yang mudah diselenggara.",
+          "Membina prototaip aplikasi web menggunakan Angular, React, Node.js, dan Spring Boot sebagai sebahagian kerja akademik.",
+          "Mengekalkan PNGK kumulatif 3.4 sambil menyiapkan deliverable tahun akhir dan mengimbangi tarikh akhir kursus."
+        ]
+      },
+      {
+        "degree": "Diploma Sains Komputer",
+        "school": "Kolej Teknikal Yayasan Sabah in Collaboration with Universiti Teknologi Malaysia",
+        "year": "2016 – 2019",
+        "bullets": [
+          "Menyelesaikan program diploma yang merangkumi asas pengkomputeran, pengaturcaraan, dan sistem IT.",
+          "Membina projek akademik yang mengukuhkan penyelesaian masalah dan kemahiran perisian praktikal."
+        ]
+      },
+      {
+        "degree": "Sijil Pelajaran Malaysia (SPM)",
+        "school": "Maktab Sabah",
+        "year": "2011 – 2015",
+        "bullets": [
+          "Menyelesaikan pendidikan menengah dan peperiksaan SPM di Maktab Sabah."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "title": "Sistem Pemantauan Asrama Berasaskan IoT",
+        "description": "Mereka bentuk dan membina platform IoT untuk memantau kemudahan serta persekitaran asrama.",
+        "highlights": [
+          "Dianugerahkan Pingat Emas untuk Persembahan Terbaik di Innoverse Showcase atas reka bentuk, fungsi, dan pelaksanaan praktikal."
+        ],
+        "award": "Pingat Emas — Persembahan Terbaik, Innoverse Showcase"
+      },
+      {
+        "title": "IoT Smart TechBand",
+        "description": "Peranti boleh pakai bantuan yang mengintegrasikan perkakasan pintar dengan antara muka perisian.",
+        "highlights": [
+          "Pemprosesan speech-to-text masa nyata untuk menyampaikan peringatan berfokus aksesibiliti kepada pengguna."
+        ]
+      },
+      {
+        "title": "Domain Platform & Services",
+        "description": "Perkhidmatan platform pengurusan domain peringkat perusahaan di Digital Webplus.",
+        "highlights": [
+          "Membina halaman UI responsif berketepatan tinggi daripada reka bentuk Figma.",
+          "Menangani pembetulan pepijat kritikal dan kemas kini ciri untuk operasi yang lancar."
+        ]
+      },
+      {
+        "title": "Palm Pool — Pengurusan Snuker & Kolam",
+        "description": "Projek bebas — suite pengurusan tersuai dan sistem Point of Sale (POS) untuk venue snuker/kolam tempatan (Palm Pool).",
+        "highlights": [
+          "Dibina sebagai kerja bebas untuk venue tempatan.",
+          "Penjejakan pemasa meja masa nyata, harga dinamik, pengurusan pesanan, dan papan pemuka laporan kewangan.",
+          "Demo UAT langsung tersedia — guna akaun di bawah untuk cuba peranan admin dan staf."
+        ],
+        "award": "Bebas"
+      }
+    ]
+  }
+}

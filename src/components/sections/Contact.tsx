@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { resume } from "@/data/resume";
 import { Section } from "@/components/ui/Section";
 import { Card } from "@/components/ui/Card";
@@ -11,28 +14,30 @@ import {
 
 /** Contact block — email, phone, LinkedIn, and location all public. */
 export function Contact() {
+  const t = useTranslations("contact");
+
   const items = [
     {
-      label: "Email",
+      label: t("email"),
       value: resume.email,
       href: `mailto:${resume.email}`,
       icon: MailIcon,
     },
     {
-      label: "Phone",
+      label: t("phone"),
       value: resume.phone,
       href: `tel:${resume.phone.replace(/\s/g, "")}`,
       icon: PhoneIcon,
     },
     {
-      label: "LinkedIn",
+      label: t("linkedIn"),
       value: "khairul-izwan-haziz",
       href: resume.linkedin,
       icon: LinkedInIcon,
       external: true,
     },
     {
-      label: "Location",
+      label: t("location"),
       value: resume.location,
       href: undefined,
       icon: LocationIcon,
@@ -40,11 +45,7 @@ export function Contact() {
   ] as const;
 
   return (
-    <Section
-      id="contact"
-      title="Contact"
-      subtitle="Open to opportunities — feel free to reach out."
-    >
+    <Section id="contact" title={t("title")} subtitle={t("subtitle")}>
       <Reveal>
         <Card>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -69,7 +70,9 @@ export function Contact() {
                   <a
                     key={item.label}
                     href={item.href}
-                    target={"external" in item && item.external ? "_blank" : undefined}
+                    target={
+                      "external" in item && item.external ? "_blank" : undefined
+                    }
                     rel={
                       "external" in item && item.external
                         ? "noopener noreferrer"

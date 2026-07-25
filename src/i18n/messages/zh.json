@@ -1,0 +1,188 @@
+{
+  "htmlLang": "zh-CN",
+  "nav": {
+    "about": "关于",
+    "skills": "技能",
+    "experience": "经历",
+    "projects": "项目",
+    "contact": "联系",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单"
+  },
+  "hero": {
+    "eyebrow": "// 作品集 & 简历",
+    "role": "软件工程师",
+    "tagline": "全栈开发者，使用 Angular、React、Node.js 和 Spring Boot 构建可扩展的 Web 与物联网解决方案。",
+    "viewProjects": "查看项目",
+    "downloadResume": "下载简历",
+    "linkedIn": "领英"
+  },
+  "about": {
+    "title": "关于",
+    "subtitle": "作为工程师，我是谁以及我关注什么。",
+    "body": "充满驱动力的开发者，具备 Angular、React、Node.js 和 Spring Boot 的实践经验。思想开放、适应力强，注重持续学习、改进工程实践，并协作交付可扩展、高性能的软件方案。能够在全栈各层贡献，并学习新框架与工具以解决复杂问题。"
+  },
+  "skills": {
+    "title": "技能",
+    "subtitle": "我用来交付软件的工具与语言。",
+    "technical": "技术技能",
+    "languages": "语言",
+    "certifications": "证书",
+    "languageHint": "点击语言以切换网站",
+    "skillGroups": {
+      "languages": "编程语言",
+      "frameworks": "框架与库",
+      "other": "其他"
+    }
+  },
+  "experience": {
+    "title": "经历",
+    "subtitle": "实习工作与正规教育。",
+    "work": "工作",
+    "education": "教育",
+    "gpa": "GPA"
+  },
+  "projects": {
+    "title": "项目",
+    "subtitle": "精选物联网、Web 平台与 POS 系统相关作品。",
+    "liveDemo": "在线演示",
+    "code": "代码",
+    "demoLogins": "演示账号"
+  },
+  "contact": {
+    "title": "联系",
+    "subtitle": "欢迎机会合作 — 随时联系我。",
+    "email": "邮箱",
+    "phone": "电话",
+    "linkedIn": "领英",
+    "location": "地点"
+  },
+  "footer": {
+    "rights": "版权所有。",
+    "builtWith": "使用 Next.js 与 Tailwind CSS 构建"
+  },
+  "cert": {
+    "hoverHint": "悬停预览 · 点击验证",
+    "clickHint": "点击在 Credly 验证",
+    "verifyLabel": "在 Credly 验证 {name}"
+  },
+  "content": {
+    "experience": [
+      {
+        "company": "Digital Webplus",
+        "title": "软件工程师实习生",
+        "period": "2026年3月 – 2026年8月",
+        "bullets": [
+          "根据 Figma 设计为企业域名管理平台构建高保真响应式 UI 页面。",
+          "处理关键缺陷修复并交付功能更新，保障平台稳定运行。",
+          "参与 Domain Platform & Services，与团队协作交付可用于生产的 Web 界面。"
+        ]
+      },
+      {
+        "company": "Zus Coffee",
+        "title": "咖啡师（兼职）",
+        "period": "2023年10月 – 2026年8月",
+        "bullets": [
+          "提供优质客户服务 — 接待顾客、点单并处理咨询或问题。",
+          "在快节奏环境中保持灵活，并快速学习新技能与流程。"
+        ]
+      },
+      {
+        "company": "Golden Screen Cinema",
+        "title": "场务（兼职）",
+        "period": "2023年4月 – 2023年9月",
+        "bullets": [
+          "以友好态度接待并协助顾客，回答询问并提供排片与场馆信息。",
+          "准确处理售票、验票，并保障影厅入场顺畅。"
+        ]
+      },
+      {
+        "company": "PC Image · Kota Kinabalu, Sabah",
+        "title": "销售助理",
+        "period": "2021年6月 – 2021年12月",
+        "bullets": [
+          "通过接待客户并与关键客户建立关系，提供优质客服。",
+          "保持产品知识，以便给出合理建议并回答客户问题。",
+          "通过电话与邮件就促销和活动与客户沟通。",
+          "协助退货、退款，并将更大问题升级给经理。",
+          "保持店内通道整洁有序，提升顾客体验。"
+        ]
+      },
+      {
+        "company": "Inti Deras · Kota Kinabalu, Sabah",
+        "title": "初级 IT Web 开发实习生",
+        "period": "2019年6月 – 2019年12月",
+        "bullets": [
+          "完成以初级 IT 与 Web 开发为重点的文凭实习。",
+          "协助构建与更新公司网页及数字内容。",
+          "支持日常 IT 工作，并在团队中学习专业 Web 开发流程。"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "软件工程",
+        "school": "University Malaysia of Computer Science & Engineering (UNIMY)",
+        "year": "2023 – 至今（2026 毕业）",
+        "gpa": "3.4",
+        "bullets": [
+          "通过课程与作业应用软件工程核心原则，强调系统设计、测试与可维护代码。",
+          "在学术项目中使用 Angular、React、Node.js 与 Spring Boot 构建 Web 应用原型。",
+          "在完成毕业交付物并平衡课程截止时间的同时，保持累计 GPA 3.4。"
+        ]
+      },
+      {
+        "degree": "计算机科学文凭",
+        "school": "Kolej Teknikal Yayasan Sabah in Collaboration with Universiti Teknologi Malaysia",
+        "year": "2016 – 2019",
+        "bullets": [
+          "完成涵盖计算基础、编程与 IT 系统的文凭课程。",
+          "通过学术项目强化问题解决与实践软件技能。"
+        ]
+      },
+      {
+        "degree": "马来西亚教育文凭 (SPM)",
+        "school": "Maktab Sabah",
+        "year": "2011 – 2015",
+        "bullets": [
+          "在 Maktab Sabah 完成中学教育与 SPM 考试。"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "title": "基于物联网的宿舍监控系统",
+        "description": "设计并构建用于监控宿舍设施与环境的物联网平台。",
+        "highlights": [
+          "因设计、功能与实践落地在 Innoverse Showcase 获最佳演示金奖。"
+        ],
+        "award": "金奖 — 最佳演示，Innoverse Showcase"
+      },
+      {
+        "title": "物联网智能 TechBand",
+        "description": "将智能硬件与软件界面结合的辅助可穿戴设备。",
+        "highlights": [
+          "实时语音转文字处理，帮助向用户提供无障碍提醒。"
+        ]
+      },
+      {
+        "title": "域名平台与服务",
+        "description": "Digital Webplus 的企业级域名管理平台服务。",
+        "highlights": [
+          "根据 Figma 设计构建高保真响应式 UI 页面。",
+          "处理关键缺陷修复与功能更新，保障顺畅运营。"
+        ]
+      },
+      {
+        "title": "Palm Pool — 台球馆管理系统",
+        "description": "自由职业项目 — 为本地台球馆（Palm Pool）定制的管理套件与收银（POS）系统。",
+        "highlights": [
+          "作为本地场馆的自由职业项目交付。",
+          "实时桌台计时、动态定价、订单管理与财务报表看板。",
+          "提供在线 UAT 演示 — 使用下方账号体验管理员与员工角色。"
+        ],
+        "award": "自由职业"
+      }
+    ]
+  }
+}
