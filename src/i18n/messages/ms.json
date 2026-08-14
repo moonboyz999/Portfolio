@@ -37,8 +37,9 @@
   },
   "experience": {
     "title": "Pengalaman",
-    "subtitle": "Kerja latihan industri dan pendidikan formal.",
-    "work": "Kerja",
+    "subtitle": "Pengalaman kejuruteraan perisian, pengalaman tambahan, dan pendidikan formal.",
+    "softwareEngineering": "Pengalaman Kejuruteraan Perisian",
+    "additionalExperience": "Pengalaman Tambahan",
     "education": "Pendidikan",
     "gpa": "PNGK"
   },
@@ -67,7 +68,7 @@
     "verifyLabel": "Sahkan {name} di Credly"
   },
   "content": {
-    "experience": [
+    "softwareEngineering": [
       {
         "company": "Digital Webplus",
         "title": "Pelatih Jurutera Perisian",
@@ -78,6 +79,18 @@
           "Menyumbang merentas Domain Platform & Services, bekerjasama dengan pasukan pada antara muka web sedia produksi."
         ]
       },
+      {
+        "company": "Inti Deras · Kota Kinabalu, Sabah",
+        "title": "Junior IT Web Developer (Pelatih)",
+        "period": "Jun 2019 – Dis 2019",
+        "bullets": [
+          "Menyelesaikan latihan diploma berfokus pada IT junior dan pembangunan web.",
+          "Membantu membina dan mengemas kini halaman web serta kandungan digital syarikat.",
+          "Menyokong tugas IT harian dan mempelajari aliran kerja pembangunan web profesional dalam pasukan."
+        ]
+      }
+    ],
+    "additionalExperience": [
       {
         "company": "Zus Coffee",
         "title": "Barista (Separuh Masa)",
@@ -106,16 +119,6 @@
           "Berhubung dengan klien melalui telefon dan e-mel tentang promosi serta acara.",
           "Membantu pemulangan item, bayaran balik, dan meningkatkan isu lebih besar kepada pengurus.",
           "Menjaga lorong kedai bersih dan tersusun untuk pengalaman pelanggan yang lebih baik."
-        ]
-      },
-      {
-        "company": "Inti Deras · Kota Kinabalu, Sabah",
-        "title": "Junior IT Web Developer (Pelatih)",
-        "period": "Jun 2019 – Dis 2019",
-        "bullets": [
-          "Menyelesaikan latihan diploma berfokus pada IT junior dan pembangunan web.",
-          "Membantu membina dan mengemas kini halaman web serta kandungan digital syarikat.",
-          "Menyokong tugas IT harian dan mempelajari aliran kerja pembangunan web profesional dalam pasukan."
         ]
       }
     ],

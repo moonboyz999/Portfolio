@@ -14,7 +14,7 @@ export const resume: Resume = {
   tagline:
     "Full-stack developer building scalable web and IoT solutions with Angular, React, Node.js, and Spring Boot.",
   about:
-    "Driven developer with hands-on experience using Angular, React, Node.js, and Spring Boot. Open-minded and highly adaptable, with a strong focus on continuous learning, improving engineering practices, and working collaboratively to deliver scalable, high-performance software solutions. Comfortable contributing across the stack and learning new frameworks and tools to solve complex problems.",
+    "Software engineer with hands-on experience building web applications and IoT solutions using Angular, React, Node.js, and Spring Boot. Strong in developing responsive interfaces, fixing production issues, and collaborating with teams to deliver scalable, maintainable, and high-quality software.",
   resumePdfPath: "/docs/Khairul-Izwan-Haziz-Resume.pdf",
   headshotPath: "/images/khairul-headshot.jpg",
   navLinks: [

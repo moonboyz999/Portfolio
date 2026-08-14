@@ -37,8 +37,9 @@
   },
   "experience": {
     "title": "Experience",
-    "subtitle": "Internship work and formal education.",
-    "work": "Work",
+    "subtitle": "Software engineering experience, additional experience, and formal education.",
+    "softwareEngineering": "Software Engineering Experience",
+    "additionalExperience": "Additional Experience",
     "education": "Education",
     "gpa": "GPA"
   },
@@ -67,7 +68,7 @@
     "verifyLabel": "Verify {name} on Credly"
   },
   "content": {
-    "experience": [
+    "softwareEngineering": [
       {
         "company": "Digital Webplus",
         "title": "Software Engineer Intern",
@@ -78,6 +79,18 @@
           "Contributed across Domain Platform & Services, collaborating with the team on production-ready web interfaces."
         ]
       },
+      {
+        "company": "Inti Deras · Kota Kinabalu, Sabah",
+        "title": "Junior IT Web Developer (Intern)",
+        "period": "Jun 2019 – Dec 2019",
+        "bullets": [
+          "Completed a diploma internship focused on junior IT and web development.",
+          "Assisted with building and updating web pages and digital content for the company.",
+          "Supported day-to-day IT tasks and learned professional web development workflows in a team setting."
+        ]
+      }
+    ],
+    "additionalExperience": [
       {
         "company": "Zus Coffee",
         "title": "Barista (Part-time)",
@@ -106,16 +119,6 @@
           "Networked with clients via phone and email about promotions and events.",
           "Assisted with item returns, payment refunds, and escalating larger issues to managers.",
           "Kept store aisles clean and organized to improve the customer experience."
-        ]
-      },
-      {
-        "company": "Inti Deras · Kota Kinabalu, Sabah",
-        "title": "Junior IT Web Developer (Intern)",
-        "period": "Jun 2019 – Dec 2019",
-        "bullets": [
-          "Completed a diploma internship focused on junior IT and web development.",
-          "Assisted with building and updating web pages and digital content for the company.",
-          "Supported day-to-day IT tasks and learned professional web development workflows in a team setting."
         ]
       }
     ],

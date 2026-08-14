@@ -37,8 +37,9 @@
   },
   "experience": {
     "title": "经历",
-    "subtitle": "实习工作与正规教育。",
-    "work": "工作",
+    "subtitle": "软件工程经验、附加经验与正规教育。",
+    "softwareEngineering": "软件工程经验",
+    "additionalExperience": "附加经验",
     "education": "教育",
     "gpa": "GPA"
   },
@@ -67,7 +68,7 @@
     "verifyLabel": "在 Credly 验证 {name}"
   },
   "content": {
-    "experience": [
+    "softwareEngineering": [
       {
         "company": "Digital Webplus",
         "title": "软件工程师实习生",
@@ -78,6 +79,18 @@
           "参与 Domain Platform & Services，与团队协作交付可用于生产的 Web 界面。"
         ]
       },
+      {
+        "company": "Inti Deras · Kota Kinabalu, Sabah",
+        "title": "初级 IT Web 开发实习生",
+        "period": "2019年6月 – 2019年12月",
+        "bullets": [
+          "完成以初级 IT 与 Web 开发为重点的文凭实习。",
+          "协助构建与更新公司网页及数字内容。",
+          "支持日常 IT 工作，并在团队中学习专业 Web 开发流程。"
+        ]
+      }
+    ],
+    "additionalExperience": [
       {
         "company": "Zus Coffee",
         "title": "咖啡师（兼职）",
@@ -106,16 +119,6 @@
           "通过电话与邮件就促销和活动与客户沟通。",
           "协助退货、退款，并将更大问题升级给经理。",
           "保持店内通道整洁有序，提升顾客体验。"
-        ]
-      },
-      {
-        "company": "Inti Deras · Kota Kinabalu, Sabah",
-        "title": "初级 IT Web 开发实习生",
-        "period": "2019年6月 – 2019年12月",
-        "bullets": [
-          "完成以初级 IT 与 Web 开发为重点的文凭实习。",
-          "协助构建与更新公司网页及数字内容。",
-          "支持日常 IT 工作，并在团队中学习专业 Web 开发流程。"
         ]
       }
     ],

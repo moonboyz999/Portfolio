@@ -26,10 +26,14 @@ type EducationItem = {
 export function Experience() {
   const t = useTranslations("experience");
   const messages = useMessages();
-  const experience = (messages.content as { experience: ExperienceItem[] })
-    .experience;
-  const education = (messages.content as { education: EducationItem[] })
-    .education;
+  const content = messages.content as {
+    softwareEngineering?: ExperienceItem[];
+    additionalExperience?: ExperienceItem[];
+    education: EducationItem[];
+  };
+  const softwareEngineering = content.softwareEngineering ?? [];
+  const additionalExperience = content.additionalExperience ?? [];
+  const education = content.education ?? [];
 
   return (
     <Section
@@ -40,11 +44,11 @@ export function Experience() {
       <div className="space-y-8">
         <div>
           <h3 className="mb-4 text-sm font-medium uppercase tracking-[0.15em] text-muted">
-            {t("work")}
+            {t("softwareEngineering")}
           </h3>
           <div className="space-y-4">
-            {experience.map((job, index) => (
-              <Reveal key={job.company} delayMs={index * 60}>
+            {softwareEngineering.map((job, index) => (
+              <Reveal key={`${job.company}-${job.title}`} delayMs={index * 60}>
                 <Card>
                   <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
                     <div>
@@ -65,6 +69,36 @@ export function Experience() {
             ))}
           </div>
         </div>
+
+        {additionalExperience.length > 0 ? (
+          <div>
+            <h3 className="mb-4 text-sm font-medium uppercase tracking-[0.15em] text-muted">
+              {t("additionalExperience")}
+            </h3>
+            <div className="space-y-4">
+              {additionalExperience.map((job, index) => (
+                <Reveal key={`${job.company}-${job.title}`} delayMs={index * 60}>
+                  <Card>
+                    <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                      <div>
+                        <h4 className="text-lg font-semibold text-foreground">
+                          {job.title}
+                        </h4>
+                        <p className="text-accent">{job.company}</p>
+                      </div>
+                      <p className="text-sm text-muted">{job.period}</p>
+                    </div>
+                    <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted">
+                      {job.bullets.map((bullet) => (
+                        <li key={bullet}>{bullet}</li>
+                      ))}
+                    </ul>
+                  </Card>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        ) : null}
 
         <div>
           <h3 className="mb-4 text-sm font-medium uppercase tracking-[0.15em] text-muted">
