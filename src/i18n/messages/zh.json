@@ -12,7 +12,7 @@
   "hero": {
     "eyebrow": "// 作品集 & 简历",
     "role": "软件工程师",
-    "tagline": "全栈开发者，使用 Angular、React、Node.js 和 Spring Boot 构建可扩展的 Web 与物联网解决方案。",
+    "tagline": "2026 年软件工程应届毕业生，寻求初级 / 毕业生软件工程师岗位 — 全栈 Java、Spring Boot、React、Angular 与 Node.js。",
     "viewProjects": "查看项目",
     "downloadResume": "下载简历",
     "linkedIn": "领英"
@@ -20,7 +20,7 @@
   "about": {
     "title": "关于",
     "subtitle": "作为工程师，我是谁以及我关注什么。",
-    "body": "充满驱动力的开发者，具备 Angular、React、Node.js 和 Spring Boot 的实践经验。思想开放、适应力强，注重持续学习、改进工程实践，并协作交付可扩展、高性能的软件方案。能够在全栈各层贡献，并学习新框架与工具以解决复杂问题。"
+    "body": "2026 年软件工程应届毕业生，寻求初级 / 毕业生软件工程师岗位。通过学术项目与后端开发实习，具备使用 Java、Spring Boot、React、Angular 和 Node.js 构建全栈 Web 应用的实践经验。持有 CompTIA Data+ 认证。适应力强、学习速度快，善于在跨职能工程团队中协作。"
   },
   "skills": {
     "title": "技能",
@@ -70,23 +70,23 @@
   "content": {
     "softwareEngineering": [
       {
-        "company": "Digital Webplus",
-        "title": "软件工程师实习生",
+        "company": "Web.Plus",
+        "title": "软件开发者",
         "period": "2026年3月 – 2026年8月",
         "bullets": [
-          "根据 Figma 设计为企业域名管理平台构建高保真响应式 UI 页面。",
-          "处理关键缺陷修复并交付功能更新，保障平台稳定运行。",
-          "参与 Domain Platform & Services，与团队协作交付可用于生产的 Web 界面。"
+          "使用 React 与 RESTful API 实现响应式 UI 组件并与后端服务集成。",
+          "与跨职能团队成员协作处理缺陷，并建立单元与集成测试以提升应用稳定性。",
+          "使用 Java 与 Spring Boot 为内部服务贡献后端业务逻辑与 API 端点。"
         ]
       },
       {
-        "company": "Inti Deras · Kota Kinabalu, Sabah",
-        "title": "初级 IT Web 开发实习生",
-        "period": "2019年6月 – 2019年12月",
+        "company": "Inti Deras",
+        "title": "软件开发者",
+        "period": "2019年4月 – 2019年9月",
         "bullets": [
-          "完成以初级 IT 与 Web 开发为重点的文凭实习。",
-          "协助构建与更新公司网页及数字内容。",
-          "支持日常 IT 工作，并在团队中学习专业 Web 开发流程。"
+          "将 Figma 设计转化为企业域名管理平台的高保真响应式 UI 页面。",
+          "诊断并修复关键缺陷，交付功能更新以保障平台稳定运行。",
+          "与平台及服务团队协作，将可用于生产的 Web 界面组件交付 QA。"
         ]
       }
     ],

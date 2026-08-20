@@ -90,7 +90,8 @@ export type Resume = {
   skillGroups: SkillGroup[];
   languages: SpokenLanguage[];
   certifications: Certification[];
-  experience: ExperienceItem[];
+  softwareEngineeringExperience: ExperienceItem[];
+  additionalExperience: ExperienceItem[];
   education: EducationItem[];
   projects: Project[];
 };

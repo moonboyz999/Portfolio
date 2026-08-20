@@ -12,7 +12,7 @@
   "hero": {
     "eyebrow": "// Portfolio & Resume",
     "role": "Jurutera Perisian",
-    "tagline": "Pembangun full-stack yang membina penyelesaian web dan IoT yang boleh skala dengan Angular, React, Node.js, dan Spring Boot.",
+    "tagline": "Graduan Kejuruteraan Perisian (2026) mencari peranan Jurutera Perisian Junior / Graduate — fullstack dengan Java, Spring Boot, React, Angular, dan Node.js.",
     "viewProjects": "Lihat Projek",
     "downloadResume": "Muat Turun Resume",
     "linkedIn": "LinkedIn"
@@ -20,7 +20,7 @@
   "about": {
     "title": "Tentang",
     "subtitle": "Siapa saya dan apa yang saya utamakan sebagai jurutera.",
-    "body": "Pembangun berdedikasi dengan pengalaman praktikal menggunakan Angular, React, Node.js, dan Spring Boot. Berfikiran terbuka dan sangat mudah menyesuaikan diri, dengan fokus kuat pada pembelajaran berterusan, menambah baik amalan kejuruteraan, dan bekerjasama untuk menyampaikan penyelesaian perisian yang boleh skala dan berprestasi tinggi. Selesa menyumbang merentas stack serta mempelajari rangka kerja dan alat baharu untuk menyelesaikan masalah kompleks."
+    "body": "Graduan Kejuruteraan Perisian (2026) mencari peranan Jurutera Perisian Junior / Graduate. Pengalaman praktikal membina aplikasi web fullstack dengan Java, Spring Boot, React, Angular, dan Node.js melalui projek akademik dan latihan pembangunan backend. Bersijil CompTIA Data+. Mudah menyesuaikan diri, cepat belajar, dan selesa bekerjasama dalam pasukan kejuruteraan merentas fungsi."
   },
   "skills": {
     "title": "Kemahiran",
@@ -70,23 +70,23 @@
   "content": {
     "softwareEngineering": [
       {
-        "company": "Digital Webplus",
-        "title": "Pelatih Jurutera Perisian",
+        "company": "Web.Plus",
+        "title": "Pembangun Perisian",
         "period": "Mac 2026 – Ogos 2026",
         "bullets": [
-          "Membina halaman UI responsif berketepatan tinggi berdasarkan reka bentuk Figma untuk platform pengurusan domain perusahaan.",
-          "Menangani pembetulan pepijat kritikal dan menghantar kemas kini ciri supaya operasi platform berjalan lancar.",
-          "Menyumbang merentas Domain Platform & Services, bekerjasama dengan pasukan pada antara muka web sedia produksi."
+          "Melaksanakan komponen UI responsif dan mengintegrasikannya dengan perkhidmatan backend menggunakan React dan RESTful API.",
+          "Bekerjasama dengan ahli pasukan merentas fungsi untuk menangani kecacatan dan menetapkan ujian unit serta integrasi untuk meningkatkan kestabilan aplikasi.",
+          "Menyumbang kepada logik perniagaan backend dan endpoint menggunakan Java dan Spring Boot untuk perkhidmatan dalaman."
         ]
       },
       {
-        "company": "Inti Deras · Kota Kinabalu, Sabah",
-        "title": "Junior IT Web Developer (Pelatih)",
-        "period": "Jun 2019 – Dis 2019",
+        "company": "Inti Deras",
+        "title": "Pembangun Perisian",
+        "period": "April 2019 – September 2019",
         "bullets": [
-          "Menyelesaikan latihan diploma berfokus pada IT junior dan pembangunan web.",
-          "Membantu membina dan mengemas kini halaman web serta kandungan digital syarikat.",
-          "Menyokong tugas IT harian dan mempelajari aliran kerja pembangunan web profesional dalam pasukan."
+          "Menukar reka bentuk Figma kepada halaman UI responsif berketepatan tinggi untuk platform pengurusan domain perusahaan.",
+          "Mendiagnosis dan menyelesaikan pepijat kritikal serta menghantar kemas kini ciri untuk mengekalkan operasi platform.",
+          "Bekerjasama dengan pasukan platform dan perkhidmatan untuk menyerahkan komponen antara muka web sedia produksi kepada QA."
         ]
       }
     ],
@@ -125,8 +125,8 @@
     "education": [
       {
         "degree": "Kejuruteraan Perisian",
-        "school": "University Malaysia of Computer Science & Engineering (UNIMY)",
-        "year": "2023 – Kini (tamat 2026)",
+        "school": "University of Computer Science And Engineering Malaysia (UNIMY)",
+        "year": "2026",
         "gpa": "3.4",
         "bullets": [
           "Mengaplikasikan prinsip kejuruteraan perisian melalui kerja kursus dan tugasan, menekankan reka bentuk sistem, ujian, dan kod yang mudah diselenggara.",
@@ -136,19 +136,12 @@
       },
       {
         "degree": "Diploma Sains Komputer",
-        "school": "Kolej Teknikal Yayasan Sabah in Collaboration with Universiti Teknologi Malaysia",
-        "year": "2016 – 2019",
+        "school": "Universiti Teknologi Malaysia",
+        "year": "2024",
+        "gpa": "2.5",
         "bullets": [
           "Menyelesaikan program diploma yang merangkumi asas pengkomputeran, pengaturcaraan, dan sistem IT.",
           "Membina projek akademik yang mengukuhkan penyelesaian masalah dan kemahiran perisian praktikal."
-        ]
-      },
-      {
-        "degree": "Sijil Pelajaran Malaysia (SPM)",
-        "school": "Maktab Sabah",
-        "year": "2011 – 2015",
-        "bullets": [
-          "Menyelesaikan pendidikan menengah dan peperiksaan SPM di Maktab Sabah."
         ]
       }
     ],
@@ -170,7 +163,7 @@
       },
       {
         "title": "Domain Platform & Services",
-        "description": "Perkhidmatan platform pengurusan domain peringkat perusahaan di Digital Webplus.",
+        "description": "Perkhidmatan platform pengurusan domain peringkat perusahaan di Web.Plus.",
         "highlights": [
           "Membina halaman UI responsif berketepatan tinggi daripada reka bentuk Figma.",
           "Menangani pembetulan pepijat kritikal dan kemas kini ciri untuk operasi yang lancar."

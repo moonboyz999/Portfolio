@@ -12,9 +12,9 @@ export const resume: Resume = {
   phone: "+60 1121521899",
   linkedin: "https://www.linkedin.com/in/khairul-izwan-haziz-493319238/",
   tagline:
-    "Full-stack developer building scalable web and IoT solutions with Angular, React, Node.js, and Spring Boot.",
+    "Fresh Software Engineering graduate (2026) seeking Junior / Graduate Software Engineer roles — fullstack with Java, Spring Boot, React, Angular, and Node.js.",
   about:
-    "Software engineer with hands-on experience building web applications and IoT solutions using Angular, React, Node.js, and Spring Boot. Strong in developing responsive interfaces, fixing production issues, and collaborating with teams to deliver scalable, maintainable, and high-quality software.",
+    "Fresh Software Engineering graduate (2026) seeking Junior / Graduate Software Engineer roles. Hands-on experience building fullstack web applications with Java, Spring Boot, React, Angular, and Node.js through academic projects and a backend development internship. CompTIA Data+ certified. Adaptable, fast learner, and comfortable collaborating in cross-functional engineering teams.",
   resumePdfPath: "/docs/Khairul-Izwan-Haziz-Resume.pdf",
   headshotPath: "/images/khairul-headshot.jpg",
   navLinks: [
@@ -27,7 +27,7 @@ export const resume: Resume = {
   skillGroups: [
     {
       title: "Languages",
-      skills: ["Java", "Python"],
+      skills: ["Java", "Python", "JavaScript", "TypeScript"],
     },
     {
       title: "Frameworks & Libraries",
@@ -35,7 +35,7 @@ export const resume: Resume = {
     },
     {
       title: "Other",
-      skills: ["RESTful API", "Node.js"],
+      skills: ["RESTful API", "Node.js", "Figma"],
     },
   ],
   languages: [
@@ -52,21 +52,33 @@ export const resume: Resume = {
         "https://www.credly.com/badges/a22749bf-0e97-4a05-911a-1716ade73056",
     },
   ],
-  experience: [
+  softwareEngineeringExperience: [
     {
-      company: "Digital Webplus",
-      title: "Software Engineer Intern",
+      company: "Web.Plus",
+      title: "Software Developer",
       period: "March 2026 – August 2026",
       bullets: [
-        "Built responsive, high-fidelity UI pages based on Figma designs for an enterprise domain management platform.",
-        "Addressed critical bug fixes and shipped feature updates to keep platform operations running smoothly.",
-        "Contributed across Domain Platform & Services, collaborating with the team on production-ready web interfaces.",
+        "Implemented responsive UI components and integrated them with backend services using React and RESTful APIs.",
+        "Collaborated with cross-functional team members to triage defects and established unit and integration tests to improve application stability.",
+        "Contributed to backend business logic and endpoints using Java and Spring Boot for internal services.",
       ],
     },
     {
+      company: "Inti Deras",
+      title: "Software Developer",
+      period: "April 2019 – September 2019",
+      bullets: [
+        "Converted Figma designs into responsive, high-fidelity UI pages for an enterprise domain management platform.",
+        "Diagnosed and resolved critical bugs and delivered feature updates to maintain platform operations.",
+        "Worked with platform and services teams to hand off production-ready web interface components to QA.",
+      ],
+    },
+  ],
+  additionalExperience: [
+    {
       company: "Zus Coffee",
       title: "Barista (Part-time)",
-      period: "October 2023 – Aug 2026",
+      period: "October 2023 – August 2026",
       bullets: [
         "Provided excellent customer service — greeting customers, taking orders, and addressing inquiries or concerns.",
         "Stayed flexible in a fast-paced environment and quickly learned new skills and procedures as needed.",
@@ -84,7 +96,7 @@ export const resume: Resume = {
     {
       company: "PC Image · Kota Kinabalu, Sabah",
       title: "Sales Assistant",
-      period: "Jun 2021 – Dec 2021",
+      period: "June 2021 – December 2021",
       bullets: [
         "Provided strong customer service by greeting clients and building relationships with key customers.",
         "Maintained product knowledge to make informed recommendations and answer client questions.",
@@ -93,23 +105,13 @@ export const resume: Resume = {
         "Kept store aisles clean and organized to improve the customer experience.",
       ],
     },
-    {
-      company: "Inti Deras · Kota Kinabalu, Sabah",
-      title: "Junior IT Web Developer (Intern)",
-      period: "Jun 2019 – Dec 2019",
-      bullets: [
-        "Completed a diploma internship focused on junior IT and web development.",
-        "Assisted with building and updating web pages and digital content for the company.",
-        "Supported day-to-day IT tasks and learned professional web development workflows in a team setting.",
-      ],
-    },
   ],
   education: [
     {
       degree: "Software Engineering",
       school:
-        "University Malaysia of Computer Science & Engineering (UNIMY)",
-      year: "2023 – Present (finishing 2026)",
+        "University of Computer Science And Engineering Malaysia (UNIMY)",
+      year: "2026",
       gpa: "3.4",
       bullets: [
         "Applied core software engineering principles through coursework and assignments, emphasizing system design, testing, and maintainable code.",
@@ -119,20 +121,12 @@ export const resume: Resume = {
     },
     {
       degree: "Diploma in Computer Science",
-      school:
-        "Kolej Teknikal Yayasan Sabah in Collaboration with Universiti Teknologi Malaysia",
-      year: "2016 – 2019",
+      school: "Universiti Teknologi Malaysia",
+      year: "2024",
+      gpa: "2.5",
       bullets: [
         "Completed a diploma programme covering foundational computing, programming, and IT systems.",
         "Built academic projects that strengthened problem-solving and practical software skills.",
-      ],
-    },
-    {
-      degree: "Sijil Pelajaran Malaysia (SPM)",
-      school: "Maktab Sabah",
-      year: "2011 – 2015",
-      bullets: [
-        "Completed secondary education and SPM examinations at Maktab Sabah.",
       ],
     },
   ],
@@ -159,7 +153,7 @@ export const resume: Resume = {
     {
       title: "Domain Platform & Services",
       description:
-        "Enterprise-level domain management platform services at Digital Webplus.",
+        "Enterprise-level domain management platform services at Web.Plus.",
       highlights: [
         "Built responsive, high-fidelity UI pages from Figma designs.",
         "Handled critical bug fixes and feature updates for smooth operations.",
@@ -177,7 +171,7 @@ export const resume: Resume = {
       ],
       tech: ["Freelance", "POS", "Real-time", "Dashboards"],
       award: "Freelance",
-      liveUrl: "https://palmpool-uat.netlify.app/",
+      liveUrl: "https://palm-pool-uat.web.app/",
       demoLogins: [
         {
           role: "Admin",
