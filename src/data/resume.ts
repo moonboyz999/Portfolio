@@ -175,7 +175,7 @@ export const resume: Resume = {
       demoLogins: [
         {
           role: "Admin",
-          email: "admin@test.com",
+          email: "user@test.com",
           password: "test123",
         },
         {
